@@ -21,7 +21,7 @@ repositories {
 }
 
 sourceCompatibility = 11
-group "io.kestra.plugin"
+group "io.kestra.plugin.sodasql"
 description 'Plugin template for Kestra'
 
 tasks.withType(JavaCompile) {
@@ -102,7 +102,7 @@ jar {
     manifest {
         attributes(
                 "X-Kestra-Title": project.name,
-                "X-Kestra-Group": project.group + ".templates",
+                "X-Kestra-Group": project.group + ".sodasql",
                 "X-Kestra-Description": project.description,
                 "X-Kestra-Version": project.version
         )
